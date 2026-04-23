@@ -40,6 +40,6 @@ app.delete("/api/notes/:id", (req, res) => {
     res.json({ message: "Note deleted"});
 });
 
-app.listen(PORT, () => {
-    console.log(`Server running at http://localhost:${PORT}`);
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Server running at http://127.0.0.1:${PORT}`);
 });
